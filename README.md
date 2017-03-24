@@ -2,11 +2,10 @@
 
 ### What's this?
 JavaGold勉強会の資料です。  
-復習用を意識して作成しています。  
-問題の難易度は本番を意識して作成しています。  
+問題の難易度は本番を想定して作成しています。  
 回答と解説は随時追加していきます。  
-対象資格はJava Gold Programmer Ⅱ SE7です。
-今後SE8も対応予定。
+対象資格はJava SE7 Programer Ⅱです。  
+今後SE8も対応予定。  
 
 ### 目次
 [1章 Javaのクラス設計](https://github.com/sanotyan1202/JavaGold/blob/master/1_Java%E3%82%AF%E3%83%A9%E3%82%B9%E8%A8%AD%E8%A8%88.md)  
