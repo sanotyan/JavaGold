@@ -11,9 +11,7 @@ class Main {
     }
 }
 class Switch {
-
     Integer i;
-
     public void execSwitch() {
         switch(i) {
         case 0:
@@ -31,9 +29,7 @@ class Switch {
 問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
-
     private String val = "a";
-
     public static void main(String[] args) {
         System.out.println("a");
         System.out.println(new String("a"));
