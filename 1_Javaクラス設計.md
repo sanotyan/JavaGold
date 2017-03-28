@@ -4,7 +4,7 @@
 この章ではSilverから比べても新しいクラスや知識は多くありません。  
 その分、理解していないと解けない問題が出題される傾向にあります。  
 ## 1-1 switch
-__問.__以下のコードを実行した結果を述べよ。
+問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     public static void main(String[] args) {
@@ -29,7 +29,7 @@ class Switch {
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
   
-__以下のコードを実行した結果を述べよ。__
+問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     public static void main(String[] args) {
@@ -56,7 +56,7 @@ caseの処理の終わりにbreakが記述されていないため"c"も出力�
 この仕様はFall Throughと呼ばれています。  
 
 ## 1-2 修飾子
-__以下のコードを実行した結果を述べよ。__
+問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     private String val = "a";
@@ -73,7 +73,7 @@ staticメソッドから非staticのメンバーにアクセスすることは�
 staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。  
 しかし、非staticメソッドやメンバーは明示的にインスタンス化しないとアクセスできないため、staticメソッドからアクセスするためには「new Main().val」のようにインスタンス化する必要があります。  
     
-__以下のコードを実行した結果を述べよ。__
+問.以下のコードを実行した結果を述べよ。
 ```java
 public class Foo {
     final int i = 0;
@@ -94,7 +94,7 @@ staticイニシャライザでも、イニシャライザ、コンストラク�
 ちなみにstaticイニシャライザは最初にクラスにアクセスした時に呼び出され、イニシャライザ、コンストラクタはインスタンス生成時に呼び出されます。
 
 ## 1-3 Enum
-__以下のコードを実行した結果を述べよ。__
+問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     public static void main(String[] args){
@@ -130,7 +130,7 @@ Enumクラスのインスタンスはordinalというメンバを持っており
 Enumの比較にはordinalが利用されるので例えば、ソートした場合でも宣言順になることに注意しましょう。  
 
 ## 1-4 static import
-__以下のコードを実行した結果を述べよ。__
+問.以下のコードを実行した結果を述べよ。
 ```java
 import static java.lang.Math.PI;
 
