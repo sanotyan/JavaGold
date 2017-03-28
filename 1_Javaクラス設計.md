@@ -1,7 +1,8 @@
 # 1章 Javaクラス設計
 
 1章はJavaのクラス設計についてです。  
-この章ではSilverから比べても新しいクラスや知識は多くありませんが、その分理解していないと解けない問題が多く出題される傾向にあります。  
+この章ではSilverから比べても新しいクラスや知識は多くありません。
+その分、理解していないと解けない問題が多く出題される傾向にあります。  
 ## 1-1 switch
 以下のコードを実行した結果を述べよ。
 ```java
@@ -15,11 +16,11 @@ class Switch {
     public void execSwitch() {
         switch(i) {
         case 0:
-            System.out.println("a");
+            System.out.print("a");
         case 1:
-            System.out.println("b");
+            System.out.print("b");
         default:
-            System.out.println("c");
+            System.out.print("c");
         }
     }
 }
@@ -27,6 +28,54 @@ class Switch {
 答え：NullPointerExceptionが発生する。  
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。
+
+以下のコードを実行した結果を述べよ。
+```java
+class Main {
+    public static void main(String[] args) {
+        new Switch().execSwitch();
+    }
+}
+class Switch {
+    Integer i = 1;
+    public void execSwitch() {
+        switch(i) {
+        case 0:
+            System.out.print("a");
+        case 1:
+            System.out.print("b");
+        default:
+            System.out.print("c");
+        }
+    }
+}
+```
+答え：bc  
+iに1が代入されているため、case 1以下の処理が実行されます。  
+caseの処理の終わりにbreakが記述されていないため"c"も出力されることに注意してください。  
+この仕様はFall Throughと呼ばれています。  
+
+以下のコードを実行した結果を述べよ。
+```java
+class Main {
+    public static void main(String[] args) {
+        new Switch().execSwitch();
+    }
+}
+class Switch {
+    Double i = 1;
+    public void execSwitch() {
+        switch(i) {
+        case 0:
+            System.out.print("a");
+        case 1:
+            System.out.print("b");
+        default:
+            System.out.print("c");
+        }
+    }
+}
+```
 ## 1-2 修飾子
 以下のコードを実行した結果を述べよ。
 ```java
@@ -39,7 +88,8 @@ class Main {
         System.out.println(val);
     }
 }
-```答え：最終行でコンパイルエラーが発生する。
+```  
+答え：最終行でコンパイルエラーが発生する。
 staticメソッドから非staticのメンバーにアクセスすることはできません。  
 staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。  
 しかし、非staticメソッドやメンバーは明示的にインスタンス化しないとアクセスできないため、staticメソッドからアクセスするためには「new Main().val」のようにインスタンス化する必要があります。  
@@ -110,6 +160,7 @@ class Main {
 		System.out.println(Math.PI);
 	}
 }
-```答え：import文でコンパイルエラーが発生する。
+```  
+答え：import文でコンパイルエラーが発生する。
 StaticImportの記述はimoport static...です。  
 [戻る](https://github.com/sanotyan1202/JavaGold)
