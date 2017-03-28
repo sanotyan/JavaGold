@@ -1,9 +1,11 @@
 # 1章 Javaクラス設計
 
-## 1-1 switch文
+1章はJavaのクラス設計についてです。  
+この章ではSilverから比べても新しいクラスや知識は多くありませんが、その分理解していないと解けない問題が多く出題される傾向にあります。  
 
-#### 1-1-1 nullをswitchする
-問.以下のコードを実行した結果を述べよ。
+## 1-1 switch
+#### 1-1-1 switch
+以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     public static void main(String[] args) {
@@ -23,10 +25,13 @@ class Switch {
         }
     }
 }
-```
+```  
+答え：NullPointerExceptionが発生する。  
+Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
+switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。
 ## 1-2 修飾子
 ### 1-2-1 static
-問.以下のコードを実行した結果を述べよ。
+以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     private String val = "a";
