@@ -142,5 +142,5 @@ class Main {
 ```  
 答え：import文でコンパイルエラーが発生する。  
 StaticImportの記述はimoport staticです。  
-  
+[次へ](https://github.com/sanotyan1202/JavaGold/blob/master/2_%E3%83%9D%E3%83%AA%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0.md) 
 [戻る](https://github.com/sanotyan1202/JavaGold)
