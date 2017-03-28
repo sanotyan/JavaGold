@@ -27,8 +27,9 @@ class Switch {
 ```  
 答え：NullPointerExceptionが発生する。  
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
-switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。
-
+switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
+  
+    
 以下のコードを実行した結果を述べよ。
 ```java
 class Main {
@@ -55,27 +56,6 @@ iに1が代入されているため、case 1以下の処理が実行されます
 caseの処理の終わりにbreakが記述されていないため"c"も出力されることに注意してください。  
 この仕様はFall Throughと呼ばれています。  
 
-以下のコードを実行した結果を述べよ。
-```java
-class Main {
-    public static void main(String[] args) {
-        new Switch().execSwitch();
-    }
-}
-class Switch {
-    Double i = 1;
-    public void execSwitch() {
-        switch(i) {
-        case 0:
-            System.out.print("a");
-        case 1:
-            System.out.print("b");
-        default:
-            System.out.print("c");
-        }
-    }
-}
-```
 ## 1-2 修飾子
 以下のコードを実行した結果を述べよ。
 ```java
@@ -89,9 +69,9 @@ class Main {
     }
 }
 ```  
-答え：最終行でコンパイルエラーが発生する。
+答え：最終行でコンパイルエラーが発生する。  
 staticメソッドから非staticのメンバーにアクセスすることはできません。  
-staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。  
+staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。    
 しかし、非staticメソッドやメンバーは明示的にインスタンス化しないとアクセスできないため、staticメソッドからアクセスするためには「new Main().val」のようにインスタンス化する必要があります。  
   
   
@@ -110,10 +90,11 @@ public class Foo {
     }
 }
 ```
-答え：staticイニシャライザでコンパイルエラーが発生する。
+答え：staticイニシャライザでコンパイルエラーが発生する。  
 final修飾子を持つメンバは一度だけ初期化することができます。  
 staticイニシャライザでも、イニシャライザ、コンストラクタでも初期化は可能ですが、複数回目の初期化なのでエラーとなります。  
 ちなみにstaticイニシャライザはクラスにアクセスした際（変数宣言時など）に呼び出され、イニシャライザ、コンストラクタはインスタンス生成時に呼び出されます。
+
 ## 1-3 Enum
 以下のコードを実行した結果を述べよ。
 ```java
