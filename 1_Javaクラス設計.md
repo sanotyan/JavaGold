@@ -1,10 +1,8 @@
 # 1章 Javaクラス設計
 
-1章はJavaのクラス設計についてです。  
+1章はJavaのクラス設計についてです。  
 この章ではSilverから比べても新しいクラスや知識は多くありませんが、その分理解していないと解けない問題が多く出題される傾向にあります。  
-
 ## 1-1 switch
-#### 1-1-1 switch
 以下のコードを実行した結果を述べよ。
 ```java
 class Main {
@@ -44,7 +42,7 @@ class Main {
 }
 ```
 ### 1-2-2 final
-問.以下のコードを実行した結果を述べよ。
+以下のコードを実行した結果を述べよ。
 ```java
 public class Foo {
     final int i = 0;
@@ -62,6 +60,7 @@ public class Foo {
 
 ## 1-3 Enum
 ### 1-3-1 Enum.Values()
+以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     public static void main(String[] args){
@@ -95,7 +94,7 @@ class Switch{
 
 ## 1-4 static import
 ### 1-4-1 語順
-
+以下のコードを実行した結果を述べよ。
 ```java
 import static java.lang.Math.PI;
 
