@@ -51,8 +51,8 @@ class Switch {
 }
 ```
 答え：bc  
-iに1が代入されているため、case 1以下の処理が実行されます。  
-caseの処理の終わりにbreakが記述されていないため"c"も出力されることに注意してください。  
+iに1が代入されているため、case 1以下の処理が実行されます。  
+caseの処理の終わりにbreakが記述されていないため"c"も出力されることに注意してください。  
 この仕様はFall Throughと呼ばれています。  
 
 ## 1-2 修飾子
@@ -140,7 +140,7 @@ class Main {
 	}
 }
 ```  
-答え：import文でコンパイルエラーが発生する。
+答え：import文でコンパイルエラーが発生する。  
 StaticImportの記述はimoport static...です。  
-
+  
 [戻る](https://github.com/sanotyan1202/JavaGold)
