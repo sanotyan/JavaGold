@@ -135,9 +135,9 @@ Enumの比較にはordinalが利用されるので例えば、ソートした場
 import static java.lang.Math.PI;
 
 class Main {
-	public static void main(String args[]) {
-		System.out.println(Math.PI);
-	}
+    public static void main(String args[]) {
+        System.out.println(Math.PI);
+    }
 }
 ```  
 答え：import文でコンパイルエラーが発生する。  
