@@ -1,4 +1,4 @@
-## JavaGold復習用問題集
+## JavaGold試験対策問題集
 ### What's this?
 Java Programmer SE7,8 Programmer2の試験を対象とした復習用の問題集です。  
 問題の難易度は本番を想定して作成しています。  
