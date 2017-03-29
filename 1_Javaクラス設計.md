@@ -4,7 +4,7 @@
 この章ではSilverから比べても新しいクラスや知識は多くありません。  
 その分、理解していないと解けない問題が出題される傾向にあります。  
 ## 1-1 switch
-__問.以下のコードを実行した結果を述べよ。
+__問.以下のコードを実行した結果を述べよ。__
 ```java
 class Main {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ Swichクラスのメンバであるiは初期化が行われていないため�
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
   
 　  
-問.以下のコードを実行した結果を述べよ。
+__問.以下のコードを実行した結果を述べよ。__
 ```java
 class Main {
     public static void main(String[] args) {
@@ -53,12 +53,13 @@ class Switch {
 }
 ```
 答え：bc  
+  
 iに1が代入されているため、case 1以下の処理が実行されます。  
 caseの処理の終わりにbreakが記述されていないため"c"も出力されることに注意してください。  
 この仕様はFall Throughと呼ばれています。  
 
 ## 1-2 修飾子
-問.以下のコードを実行した結果を述べよ。
+##### 問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
     private String val = "a";
