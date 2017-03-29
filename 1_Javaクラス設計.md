@@ -30,6 +30,7 @@ class Switch {
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
   
+　  
 問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
