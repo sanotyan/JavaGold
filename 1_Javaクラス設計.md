@@ -30,7 +30,6 @@ class Switch {
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
   
-　  
 ##### 問.以下のコードを実行した結果を述べよ。
 ```java
 class Main {
@@ -77,7 +76,6 @@ staticメソッドから非staticのメンバーにアクセスすることは�
 staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。  
 しかし、非staticメソッドやメンバーは明示的にインスタンス化しないとアクセスできないため、staticメソッドからアクセスするためには「new Main().val」のようにインスタンス化する必要があります。  
     　
-     
 ##### 問.以下のコードを実行した結果を述べよ。
 ```java
 public class Foo {
@@ -149,7 +147,7 @@ class Main {
 ```  
 答え：import文でコンパイルエラーが発生する。  
   
-StaticImportの記述はimoport staticです。  
+Static Importの記述はimoport staticです。  
 
 [次へ](https://github.com/sanotyan1202/JavaGold/blob/master/2_%E3%83%9D%E3%83%AA%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0.md)　
 [戻る](https://github.com/sanotyan1202/JavaGold)
