@@ -26,6 +26,7 @@ class Switch {
 }
 ```  
 答え：NullPointerExceptionが発生する。  
+
 Swichクラスのメンバであるiは初期化が行われていないため、nullが代入されています。  
 switch文では参照型の値の比較はequalsを用いて行うため、NullPointerExcepitonが発生します。  
   
