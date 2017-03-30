@@ -3,7 +3,7 @@
 Java Programmer SE7,8 Programmer2の試験を対象とした復習用の問題集です。  
 問題の難易度は本番を想定して作成しています。  
 紫本あたりを一通り終えた後に抜け漏れがないか確認のために使ってください。  
-動作確認は[paiza.io(Java8)](https://paiza.io/projects/new)で行っています。  
+動作確認は[paiza.io(Java SE8)](https://paiza.io/projects/new)で行っています。  
 
 ### 目次
 [1章 Javaのクラス設計](https://github.com/sanotyan1202/JavaGold/blob/master/1_Java%E3%82%AF%E3%83%A9%E3%82%B9%E8%A8%AD%E8%A8%88.md)  
