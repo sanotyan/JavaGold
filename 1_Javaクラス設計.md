@@ -25,9 +25,9 @@ class Switch {
     }
 }
 ```  
-答え：NullPointerExceptionが発生する。  
+答え：swicth文冒頭でNullPointerExceptionが発生する。  
 
-Swichクラスのメンバであるiは初期化されておらずnullが代入されています。  
+Swichクラスのメンバであるiは初期化されておらずnullが代入されています。  
 switch文では、参照型の値の比較をequalsメソッドで行うため、NullPointerExcepitonが発生します。  
   
 ##### 問.以下のコードを実行した結果を述べよ。
@@ -71,7 +71,7 @@ class Main {
 ```  
 答え：最終行でコンパイルエラーが発生する。  
   
-staticメソッドから非staticメンバであるvalにアクセスすることができず、コンパイルエラーが発生します。  
+staticメソッドから非staticメンバであるvalにアクセスすることができず、コンパイルエラーが発生します。  
 staticメソッドやメンバはアプリケーション実行時にインスタンス化され、実行中は常にアクセスが可能です。  
 しかし、非staticメソッドやメンバは「new Main().val」のようにインスタンス化してアクセスする必要があります。  
   
