@@ -129,7 +129,7 @@ class Switch{
 EnumクラスのValuesメソッドはEnumクラスのインスタンスを配列で返します。  
 配列の順番は宣言順です。  
 
-## 1-4 static import
+## 1-4 Static Import
 ##### 問.以下のコードを実行した結果を述べよ。
 ```java
 import static java.lang.Math.PI;
