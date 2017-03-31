@@ -27,8 +27,8 @@ class Switch {
 ```  
 ##### 答え：swicth文冒頭でNullPointerExceptionが発生する。  
 
-Swichクラスのメンバであるiは初期化されておらずnullが代入されています。  
-switch文では、参照型の値の比較をequalsメソッドで行うため、NullPointerExcepitonが発生します。  
+Switchクラスのメンバであるiは初期化されておらずnullが代入されています。  
+Integerの値の比較はequalsメソッドで行われるため、NullPointerExcepitonが発生します。  
   
 ##### 問.以下のコードを実行した結果を述べよ。
 ```java
@@ -54,7 +54,7 @@ class Switch {
 ##### 答え：bc  
   
 iに1が代入されているため、case 1以下の処理が実行されます。  
-caseの処理の終わりにbreakが記述されていないため、default以下の処理が実行され"c"が出力されます。  
+caseの処理の終わりにbreakが記述されていないとき、default以下の処理も実行され"bc"が出力されます。  
 
 ## 1-2 修飾子
 ##### 問.以下のコードを実行した結果を述べよ。
